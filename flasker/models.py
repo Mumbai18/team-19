@@ -92,3 +92,4 @@ class Volunteer(db.Model):
 	emailaddress = db.Column(db.String(40),nullable=False)
 	mobileno = db.Column(db.String(12),nullable=False)
 
+
