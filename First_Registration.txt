@@ -1,0 +1,15 @@
+Class User(db.model):
+username = Column(String(30),primary_key=True) 
+firstname = Column(db.String(30),nullable=False),
+lastname = Column(db.String(30),nullable=False),
+gender = Column(db.String(10),nullable=False),
+dob = Column(db.String(30),nullable=False),
+age = Column(db.Integer,nullable=False),
+parentmobno = Column(db.String(12),nullable=False),
+personalno = Column(db.String(12),nullable=False),
+alternateno = Column(db.String(12),nullable=False),
+address_line1 = Column(db.String(100),nullable=False),
+address_line2 = Column(db.String(100),nullable=False),
+city = Column(db.String(30),nullable=False),
+state = Column(db.String)
+ 
