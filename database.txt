@@ -3,6 +3,7 @@ Class Applicant(db.Model):
 	firstname = db.Column(db.String(30),nullable=False)
 	lastname = db.Column(db.String(30),nullable=False)
 	studusername = db.Column(String(50),primary_key=True) 
+	password = db.Column(String(20),nullable=False)
 	gender = db.Column(db.String(10),nullable=False)
 	dob = db.Column(db.String(30),nullable=False)
 	age = db.Column(db.Integer,nullable=False)
@@ -106,4 +107,13 @@ class Volunteer(db.Model):
 	password = db.Column(db.String(20),nullable=False)
 	emailaddress = db.Column(db.String(40),nullable=False)
 	mobileno = db.Column(db.String(12),nullable=False)
+
+
+
+
+
+
+
+
+
 
