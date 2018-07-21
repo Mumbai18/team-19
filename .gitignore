@@ -29,3 +29,5 @@ pip-log.txt
 venv
 app.db
 .idea
+package-lock.json
+/node_modules
