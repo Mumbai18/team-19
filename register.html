@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>JAIN SOCIAL ORGANIZATION</title>
+
+	<!-- CSS includes -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+
+</head>
+	<body data-spy="scroll" data-target=".main-nav">
+
+
+
+<section>
+
+      <div class="container">
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>                    </div>
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                        <form id="loginform" class="form-horizontal" role="form">
+
+
+
+
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account!
+                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+        </div>
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Username</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="username" placeholder="UserName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Gender</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="gender" placeholder="eg.Female">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Date of Birth</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="dob" placeholder="24/07/1997">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Age</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="age" placeholder="34">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="email" placeholder="2015xyz@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Parent Mobile/Guardian</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="mob1" placeholder="9988776655">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Personal Number</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="mob2" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Alternate Number</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="mob3" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Nationality</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="nationality" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Address</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="address" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Address</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="passwd" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">City</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="city" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">State</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="state" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Income </label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="state" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <span style="margin-left:8px;"></span>
+                                    </div>
+                                </div>
+
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+
+                                </div>
+
+
+
+                            </form>
+                         </div>
+                    </div>
+
+
+
+
+         </div>
+    </div>
+
+
+
+</body>
+</html>
