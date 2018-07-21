@@ -2,7 +2,7 @@
 Class applicant(db.Model):
 	firstname = Column(db.String(30),nullable=False)
 	lastname = Column(db.String(30),nullable=False)
-	studusername = Column(String(30),primary_key=True) 
+	studusername = Column(String(50),primary_key=True) 
 	gender = Column(db.String(10),nullable=False)
 	dob = Column(db.String(30),nullable=False)
 	age = Column(db.Integer,nullable=False)
@@ -100,5 +100,11 @@ class donates(db.Model):
 	donorusername = Column(db.String(30),ForeignKey('Donor.donorusername'))
 	amount = Column(db.Integer(9),nullable=False)
 
-  
+class volunteer(db.Model):
+	fname = Column(db.String(30),nullable=False)
+	lname = Column(db.String(30),nullable=False)
+	vusername = Column(db.String(30),primary_key=True)
+	password = Column(db.String(20),nullable=False)
+	emailaddress = Column(db.String(40),nullable=False)
+	mobileno = Column(db.String(12),nullable=False)
 
