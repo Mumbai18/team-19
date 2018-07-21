@@ -11,6 +11,8 @@
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link id="themecss" rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light-glow/all.min.css" />
     <link href="css/theme.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,143 +42,64 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html" class="smooth-scroll">APPLY</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">TEAM</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li class="active"><a href="project.html" class="smooth-scroll">PROJECT</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
-				<li><a href="donate.html">DONATE</a></li>
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="project.html">REGISTER<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Student</a></li>
-					<li><a href="#">Donor</a></li>
-					<!-- <li><a href="#">Student</a></li>
-					<li><a href="#">Donor</a></li>
-					<li><a href="#">Student</a></li> -->
-				</ul>
-			</li>
-				<li><a href="">LOGIN</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
 
-<!-- Carousel -->
-<div id="theme-carousel" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#theme-carousel" data-slide-to="0" class="active"></li>
-		<li data-target="#theme-carousel" data-slide-to="1"></li>
-		<li data-target="#theme-carousel" data-slide-to="2"></li>
-	</ol>
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img src="images/carousel1.jpg" alt="carousel1" style="width:100%" />
-			<div class="carousel-caption">
-				<h1 class="text-warning">Broker</h1>
-				<h2>comparison</h2>
+<div class="container-project-prview">
+    <div class="container">
+		<div class="page-header" id="preview">
+			<h1 class="text-warning">Preview Of Our Latest Projects</h1>
+        </div>
+		<div class="row">
+            <div class="col-md-8" style="margin-bottom:20px;">
+				<div id="chart"></div>
 			</div>
-		</div>
-		<div class="item">
-			<img src="images/carousel2.jpg" alt="carousel2" style="width:100%" />
-			<div class="carousel-caption">
-				<h1 class="text-warning">Accounting</h1>
-				<h2>valuations</h2>
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/carousel3.jpg" alt="carousel3" style="width:100%">
-			<div class="carousel-caption">
-				<h1 class="text-warning">Operation</h1>
-				<h2>consulting center</h2>
+			<div class="col-md-4" style="margin-bottom:20px;">
+                <div id="piechart"></div>
 			</div>
 		</div>
 	</div>
-	<!-- Controls -->
-	<a class="left carousel-control" href="#theme-carousel" role="button" data-slide="prev">
-        <div class="carousel-control-arrow">&#8249;</div>
-	</a>
-	<a class="right carousel-control" href="#theme-carousel" role="button" data-slide="next">
-        <div class="carousel-control-arrow">&#8250;</div>
-	</a>
 </div>
 
-<div class="container-home">
+<div class="container-project">
     <div class="container">
-		<div class="page-header" id="home">
+		<div class="page-header" id="project">
+			<h1>Our Recent Projects</h1>
         </div>
         <div class="row">
-			<div class="col-md-4">
-				<img class="img-responsive" style="border-radius:50%; width:250px; height:250px;" src="images/image0.jpg" />
-			</div>
-			<div class="col-md-4">
-				<h2 class="text-warning">About Us</h2>
-				<h3>What About Us?</h3>
-				<p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			</div>
-			<div class="col-md-4">
-				<h2 class="text-warning">Services</h2>
-				<h3>What`s New?</h3>
-				<p>
-				<ul>
-					<li>Estate Preservation</li>
-					<li>Education Funding</li>
-					<li>Stock Option Planning</li>
-					<li>Retirement Planning</li>
-					<li>Insurance Planning</li>
-					<li>Cash Flow Management</li>
-					<li>Tax Planning</li>
-				</ul>
-				</p>
-			</div>
-		</div>
-    </div>
-</div>
-
-<div class="container-help">
-    <div class="container">
-        <div class="page-header" id="help">
-			<h1>Just In Case You Need Any Help</h1>
-        </div>
-        <div class="row text-center">
-			<div class="col-md-3">
-				<span class="services-circle text-center"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></span>
-				<h3>Email Support</h3>
-			</div>
-			<div class="col-md-3">
-				<span class="services-circle text-center"><i class="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
-				<h3>24/7 Support</h3>
-			</div>
-			<div class="col-md-3">
-				<span class="services-circle text-center"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i></span>
-				<h3>Free Phone</h3>
-			</div>
-			<div class="col-md-3">
-				<span class="services-circle text-center"><i class="fa fa-question fa-4x" aria-hidden="true"></i></span>
-				<h3>FAQ</h3>
-			</div>
-		</div>
-    </div>
-</div>
-
-<div class="container-client">
-    <div class="container">
-        <div class="page-header" id="client">
-        </div>
-        <div class="row text-center">
-			<div class="col-md-3">
-				<img class="img-responsive" style="width:150px; height:150px;" src="images/client1.jpg" />
-			</div>
-			<div class="col-md-3">
-				<img class="img-responsive" style="width:150px; height:150px;" src="images/client2.jpg" />
-			</div>
-			<div class="col-md-3">
-				<img class="img-responsive" style="width:150px; height:150px;" src="images/client3.jpg" />
-			</div>
-			<div class="col-md-3">
-				<img class="img-responsive" style="width:150px; height:150px;" src="images/client4.jpg" />
-			</div>
-		</div>
-    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" style="margin: 10px;" src="images/gallery/gallery4.jpg" />
+                    <div class="overlay">
+                        <h2>Individual</h2>
+                    </div>
+			    </div>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" style="margin: 10px;" src="images/gallery/gallery5.jpg" />
+                    <div class="overlay">
+                        <h2>Business</h2>
+                    </div>
+			    </div>
+		    </div>
+		    <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" style="margin: 10px;" src="images/gallery/gallery6.jpg">
+                    <div class="overlay">
+                        <h2>Investment</h2>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+	</div>
 </div>
 
 <footer id="subfooter" class="clearfix">
@@ -214,7 +137,7 @@
 					<li>54, North Road, PA 45086, USA</li>
 					<li>+1 888 455 6677</li>
 					<li><a href="mailto:mail@example.com">mail@example.com</a></li>
-				</ul>
+				</ul> 
 			</div>
 			<div class="col-md-3">
 				<h4 class="text-warning"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp; Archive</h4>
@@ -225,7 +148,7 @@
 					<li>March, 2015</li>
 					<li>February, 2016</li>
 					<li>January, 2016</li>
-				</ul>
+				</ul> 	
 				</p>
 			</div>
 			<div class="col-md-3">
@@ -237,7 +160,7 @@
 					<li>Report illegal</li>
 					<li>More information</li>
 					<li>FAQs</li>
-				</ul>
+				</ul> 	
 				</p>
 			</div>
             <div class="col-md-3">
@@ -249,12 +172,64 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+<script src="js/gridData.js"></script>
 <script src="js/theme.js"></script>
 
 <script type="text/javascript">
     jQuery(function($) {
+        $("#chart").shieldChart({
+            seriesPalette: ["#f2c500", "#333333", "#e94b35"],
+            primaryHeader: {
+                text: "GDP Changes per region"
+            },
+            axisX: {
+                categoricalValues: ["2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011"]
+            },
+            dataSeries: [{
+                seriesType: 'area',
+                collectionAlias: "India",
+                data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.801, 3.890, 8.238, 9.552, 6.855]
+            }, {
+                seriesType: 'area',
+                collectionAlias: "World - wide",
+                data: [1.988, 2.733, 3.994, 3.464, 4.001, 3.939, 1.333, -2.245, 4.339, 2.727]
+            }, {
+                seriesType: 'area',
+                collectionAlias: "Haiti",
+                data: [-0.253, 0.362, -3.519, 1.799, 2.252, 3.343, 0.843, 2.877, -5.416, 5.590]
+            }]
+        });
 
+        $("#piechart").shieldChart({
+            seriesPalette: ["#f2c500", "#333333", "#e94b35"],
+            exportOptions: {
+                image: false,
+                print: false
+            },
+            primaryHeader: {
+                text: "Browsers Popularity amongst Users"
+            },
+            chartLegend: {
+                enabled: true
+            },
+            seriesSettings: {
+                pie: {
+                    enablePointSelection: true        
+                }
+            },
+            dataSeries: [{
+                seriesType: "pie",
+                collectionAlias: "Usage",
+                data: [
+                    ["IE", 9.0],                        
+                    { collectionAlias: "Firefox", y: 26.8, selected: true },
+                    ["Chrome", 55.8],
+                    ["Safari", 3.8],
+                    ["Opera", 1.9]
+                ]
+            }]
+        });
     });
 </script>
 
