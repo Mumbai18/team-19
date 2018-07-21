@@ -23,7 +23,7 @@ Class Applicant(db.Model):
 
 
 class Student(db.Model):
-	studusername = db.Column(db.String(50),ForeignKey('applicant.username'),
+	studusername = db.Column(db.String(50),ForeignKey('Applicant.username')
 	photo = db.Column(db.Blob,nullable= False)
 	emailaddress = db.Column(db.String(30),nullable=False)
 	currentaddress = db.Column(db.String(100),nullable=False)
@@ -66,7 +66,7 @@ class Student(db.Model):
 
 
 class Education(db.Mode1):
-	studusername = db.Column(db.String(50),ForeignKey('student.username'))
+	studusername = db.Column(db.String(50),ForeignKey('Student.username'))
 	yearofpassing = db.Column(db.Integer(4),nullable=False)
 	examination = db.Column(db.String(100),nullable=False)
 	collegepassed = db.Column(db.String(100),nullable=False)
@@ -96,7 +96,7 @@ class Committeemembers(db.Model):
 	mobileno = db.Column(db.String(12),nullable=False)
 
 class Donates(db.Model):
-	studusername = db.Column(db.String(30),ForeignKey('student.studusername'))
+	studusername = db.Column(db.String(30),ForeignKey('Student.studusername'))
 	donorusername = db.Column(db.String(30),ForeignKey('Donor.donorusername'))
 	amount = db.Column(db.Integer(9),nullable=False)
 
