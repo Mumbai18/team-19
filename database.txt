@@ -48,7 +48,6 @@ class Student(db.Model):
 	otherfees =  db.Column(db.Integer(6),nullable=False)
 	totalfees =  db.Column(db.Integer(6),nullable=False)
 	helpfromgoverment = db.Column(db.String(10),nullable=False)
-	owncontribution = db.Column(db.String(10),nullable=False)
 	netamountrequired = db.Column(db.Integer(6),nullable=False)
 	extracurricular = db.Column(db.String(100),nullable=False)
 	reference1name = db.Column(db.String(50),nullable=False)
