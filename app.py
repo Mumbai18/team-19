@@ -1,3 +1,4 @@
+
 from flasker import app
 from flasker.models import  Applicant, Student, Donor, Committeemembers,  Donates, Volunteer, db
 
@@ -8,5 +9,7 @@ def make_shell_context():
 
 if __name__ == '__main__':
     app.run()
+    db.session.add(Applicant(username='nimish', password='sule'))
+    db.session.commit()
 
 
