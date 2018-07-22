@@ -1,126 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Sign Up Form with live validation</title>
 
-	<title>Investment Business - Bootstrap Theme</title>
-
-
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- Navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a href="#" title="Investment Business Bootstrap Theme">
-                <img class="logo" src="images/logo.png" alt="Investment Business Bootstrap Theme" style="margin-top:5px;" />
-            </a>
+<body>
+
+
+
+<form action="index.php" method="post">
+  <h2>Login</h2>
+		<p>
+			<label for="username" class="floatLabel">UserName</label>
+			<input id="username" name="username" type="text">
+		</p>
+		<p>
+			<label for="password" class="floatLabel">Password</label>
+			<input id="password" name="password" type="password">
+		</p>
+		<div class="form-group">
+				<div class="col-md-12 control">
+						<a href="reg2.html"><button type="button" class="btn btn-default">Submit</button></a>
+				</div>
 		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">TEAM</a></li>
-				<li><a href="services.html">SERVICES</a></li>
-				<li class="active"><a href="project.html" class="smooth-scroll">PROJECT</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-</nav>
-
-<div class="container">
-	<div class="login-container">
-            <div id="output"></div>
-            <div class="avatar"></div>
-            <div class="form-box">
-                <form action="" method="">
-                    <input name="user" type="text" placeholder="username">
-                    <input type="password" placeholder="password">
-                    <button class="btn btn-info btn-block login" type="submit">Login</button>
-                </form>
-            </div>
-        </div>
-
-</div>
+	</form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
 
-<script src="js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
-<script src="js/gridData.js"></script>
-<script src="js/theme.js"></script>
+    <script  src="js/index.js"></script>
 
-<script type="text/javascript">
-    jQuery(function($) {
-        $("#chart").shieldChart({
-            seriesPalette: ["#f2c500", "#333333", "#e94b35"],
-            primaryHeader: {
-                text: "GDP Changes per region"
-            },
-            axisX: {
-                categoricalValues: ["2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011"]
-            },
-            dataSeries: [{
-                seriesType: 'area',
-                collectionAlias: "India",
-                data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.801, 3.890, 8.238, 9.552, 6.855]
-            }, {
-                seriesType: 'area',
-                collectionAlias: "World - wide",
-                data: [1.988, 2.733, 3.994, 3.464, 4.001, 3.939, 1.333, -2.245, 4.339, 2.727]
-            }, {
-                seriesType: 'area',
-                collectionAlias: "Haiti",
-                data: [-0.253, 0.362, -3.519, 1.799, 2.252, 3.343, 0.843, 2.877, -5.416, 5.590]
-            }]
-        });
 
-        $("#piechart").shieldChart({
-            seriesPalette: ["#f2c500", "#333333", "#e94b35"],
-            exportOptions: {
-                image: false,
-                print: false
-            },
-            primaryHeader: {
-                text: "Browsers Popularity amongst Users"
-            },
-            chartLegend: {
-                enabled: true
-            },
-            seriesSettings: {
-                pie: {
-                    enablePointSelection: true
-                }
-            },
-            dataSeries: [{
-                seriesType: "pie",
-                collectionAlias: "Usage",
-                data: [
-                    ["IE", 9.0],
-                    { collectionAlias: "Firefox", y: 26.8, selected: true },
-                    ["Chrome", 55.8],
-                    ["Safari", 3.8],
-                    ["Opera", 1.9]
-                ]
-            }]
-        });
-    });
-</script>
-<script src="js/script.js"></script>
+
 
 </body>
+
 </html>
