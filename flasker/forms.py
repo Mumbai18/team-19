@@ -4,7 +4,7 @@ from wtforms import StringField, PasswordField, BooleanField, SubmitField, \
     TextAreaField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, \
     Length
-from flasker.models import Student, Applicant, Committee, Donor, Educon
+from flasker.models import Student, Applicant, Committeemembers, Donor, Educon
 
 
 class LoginForm(FlaskForm):

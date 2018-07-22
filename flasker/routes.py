@@ -2,7 +2,7 @@ from flask import render_template, flash, redirect, url_for, request, session
 from flasker import app, db
 from flask_login import current_user, login_user, logout_user, login_required
 from flasker.forms import LoginForm
-from flasker.models import Student, Applicant, Committee, Donor, Educon
+from flasker.models import Applicant, Student, Donor, Committeemembers, Donates
 
 @app.route('/base', methods=['GET', 'POST'])
 def base():
@@ -48,7 +48,7 @@ def log():
         if user and str(user.password) == str(request.form['password']):
             return redirect(url_for('educon'))
     elif str(request.form['category']) == 'committee':
-        user = Committee.query.filter_by(username=request.form['username']).first()
+        user = Committeemembers.query.filter_by(username=request.form['username']).first()
         if user and str(user.password) == str(request.form['password']):
             return redirect(url_for('commmittee'))
     elif str(request.form['category']) == 'applicant':
@@ -62,21 +62,34 @@ def log():
 
 @app.route('/applicant', methods=['GET', 'POST'])
 def applicant():
+
     return render_template("applicant.html")
+
+@app.route('/applicant_submit', methods=['POST'])
+def applicant_submit():
+    db.session.add(Applicant(request.form['firstname'], request.form['lastname'], request.form['studusername'], request.form['gender'], request.form['dob'], request.form['age'],
+                    request.form['emailaddress'], request.form['parentmobno'], request.form['personalno'], request.form['nationality'], request.form['city'], request.form['state'],
+                             request.form['address_line1']))
+    #for keys int
+    db.session.commit()
 
 
 @app.route('/committee', methods=['GET', 'POST'])
 def committee():
     return render_template("committee.html")
 
+@app.route('/committee')
 @app.route('/educon', methods=['GET', 'POST'])
 def educon():
-    return render_template("educon.html")
+    u = Applicant.query.all()
+    return render_template("educon.html", u)
 
 @app.route('/student')
 def student():
+
     return render_template("student.html")
 
 @app.route('/donor', methods=['GET', 'POST'])
 def donor():
+
     return render_template("donor.html")

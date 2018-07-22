@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+   </head>
+   
+   <body>
+      <div id = "monthly_income" style = "width: 700px; height: 400px; margin: 0 auto">
+      </div>
+
+      <div id="demo"></div>
+      <script language = "JavaScript">
+       /* var obj = {"table":"",};  //Specify table name and columns here
+        var jsonData;
+        var dbParam = JSON.stringify(obj);
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsonData = JSON.parse(this.responseText);
+    }
+};
+xmlhttp.open("POST", "json_demo_db_post.php", true); //TODO: Replace php link by .py link
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+*/
+
+         function drawChart() {
+            // The data of the chart to be drawn.
+           var data = google.visualization.arrayToDataTable([
+               ['Year', 'Income(in Rupees)'],
+               ['2012',  5000],
+               ['2013',  6300],
+               ['2014',  6000],
+               ['2015',  6500],
+               ['2016',  6600],
+               ['2017',  7000],
+            ]);
+            
+
+           //var data = google.visualization.DataTable(jsonData);
+
+            var options = {title: 'Monthly family income v/s Year'}; 
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.ColumnChart(document.getElementById('monthly_income'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
+</html>

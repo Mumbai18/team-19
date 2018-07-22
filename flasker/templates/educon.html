@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Educon</title>
 </head>
+{% for i in u %}
+    {% for x in i.__table__.columns %}
+        {{ x }}
+    {% endfor %}
+{% endfor %}
 <body>
 
 </body>
