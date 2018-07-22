@@ -6795,7 +6795,7 @@ h2 {
 .container-help {
 	padding-top: 20px;
 	padding-bottom: 50px;
-	background: url(../images/help_background.jpg) no-repeat center center fixed;
+	background:    (../images/help_background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
